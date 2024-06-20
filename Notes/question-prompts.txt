@@ -1,0 +1,9 @@
+Answer my questions about the image in the following format:
+
+    Answer 1: ..., Answer 2: ..., Answer 3: ..., Answer 4: ..., Answer 5:
+
+    Question 1: Describe the person that is visible in the image?
+    Question 2: Describe the interaction that the person is having with an object if any.
+    Question 3: If that person is interacting with an object describe the object.
+    Question 4: If that person is interacting with an object describe the interaction.
+    Question 5: If that person is interacting with an object describe the surrounding context of the interaction.

@@ -1,0 +1,7 @@
+iterative_stratification==0.1.7
+numpy==1.26.4
+pandas==2.2.1
+Pillow==10.2.0
+torch==2.2.0 --index-url https://download.pytorch.org/whl/cu118
+transformers==4.36.2
+matplotlib==3.8.2
