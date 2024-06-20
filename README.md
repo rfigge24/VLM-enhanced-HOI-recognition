@@ -4,7 +4,8 @@ This repository contains all the attributes of my bachelor thesis project. In th
 ![alt text](assets/model_diagram.png)
 
 # Reproduction instructions:
-Clone this repository to a folder of your choice. Add the hico_20150920 folder that can be downloaded from [the HICO website](https://websites.umich.edu/~ywchao/hico/) to the same folder as this repo is in.
+Clone this repository to a folder of your choice. Add the hico_20150920 folder that can be downloaded from [the HICO website](https://websites.umich.edu/~ywchao/hico/) to the same folder as this repo is in. While this website is currently not available the dataset can still be downloaded from their [google drive link](https://drive.google.com/uc?export=download&id=1SSWJZaczRNYeUSEkIzJb019YaVUagt3J) directly.
+
 
 This should result in the following directory structure:
 ```
