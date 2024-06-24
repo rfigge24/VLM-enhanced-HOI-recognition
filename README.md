@@ -42,9 +42,9 @@ Note that there are training and testing notebooks. Training notebooks are used 
 ## VLM prompt:
 The prompt we used can be found in `Notes/question-prompts`. All the text in this file is sumbitted to the VLM as a single prompt.
 
-# Details:
+<!-- # Details:
 Details can be read in my thesis that is publically available on {TOBEADDED}
 
 # How to cite?
-If you find this repository usefull for your project please cite as {TOBEADDED}
+If you find this repository usefull for your project please cite as {TOBEADDED} -->
 
