@@ -1,3 +1,7 @@
+"""This module contains our custom oversampler that makes that each class atleast occures a certain number of times in the training set.
+
+"""
+
 import torch
 from torch.utils.data import Dataset, DataLoader, Sampler
 import random
