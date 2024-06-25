@@ -7,6 +7,7 @@ from collections import defaultdict
 import pandas as pd
 import torch
 import json
+import os
 
 def _load_csv_to_tensor(csv_path: str):
     """A helper function for internal use to load csv tables into a torch.tensor.
@@ -104,9 +105,11 @@ def generate_seperate_annotations(hoi_annotation_path: str, nounlist_path: str, 
         return ((nname_labels, nname_annotations), (vname_labels, vname_annotations))
 
     # Else write the annotations to their specific output file as csv:
+    os.makedirs(os.path.dirname(out_path_nnames), exist_ok=True)
     nname_anno_df = pd.DataFrame(nname_annotations.numpy())
     nname_anno_df.to_csv(out_path_nnames, index=False,header=False, na_rep='NaN') 
 
+    os.makedirs(os.path.dirname(out_path_vnames), exist_ok=True)
     vname_anno_df = pd.DataFrame(vname_annotations.numpy())
     vname_anno_df.to_csv(out_path_vnames, index=False,header=False, na_rep='NaN') 
 
@@ -137,6 +140,7 @@ def augment_HICO_annotations(hoi_annotations: torch.Tensor | str, nname_annotati
     
     # Else write the annotations to the output file as csv.
     augmented_data_df = pd.DataFrame(augmented_data.numpy())
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     augmented_data_df.to_csv(out_path, index= False, header= False, na_rep='NaN')
 
 
@@ -185,6 +189,7 @@ def augment_HICO_labels(hoi_labels_input: list[str] | str, nname_labels_input: l
     if out_path is None:
         return augmented_labels
 
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w') as file:
         for string in augmented_labels:
             file.write(string + '\n')

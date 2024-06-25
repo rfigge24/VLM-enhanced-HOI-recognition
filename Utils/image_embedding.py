@@ -80,6 +80,7 @@ def images_to_clip_embeddings(input_paths: list[str],
     if out_path == None:
         return embeddings
 
+    os.makedirs(os.path.dirname(out_path+'.pt'), exist_ok=True)
     torch.save(embeddings, out_path+'.pt')
 
 

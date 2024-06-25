@@ -3,6 +3,7 @@
 """
 
 import torch
+import os
 
 def combine_image_and_text_embeddings(image_embeddings_path: str,
                text_embeddings_path: str,
@@ -25,6 +26,7 @@ def combine_image_and_text_embeddings(image_embeddings_path: str,
     if out_path == None:
         return combined_embeddings
 
+    os.makedirs(os.path.dirname(out_path+'.pt'), exist_ok=True)
     torch.save(combined_embeddings, out_path+'.pt')
 
 

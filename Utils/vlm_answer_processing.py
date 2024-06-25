@@ -5,6 +5,7 @@
 
 import json
 import re
+import os
 
 
 def process_vlm_answers(input_path: str,
@@ -50,6 +51,7 @@ def process_vlm_answers(input_path: str,
     if out_path == None:
         return answerssplit
     
+    os.makedirs(os.path.dirname(out_path), exist_ok=True)
     with open(out_path, 'w') as f:
         json.dump(answerssplit, f)
 
