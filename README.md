@@ -42,8 +42,11 @@ Note that there are training and testing notebooks. Training notebooks are used 
 ## VLM prompt:
 The prompt we used can be found in `Notes/question-prompts`. All the text in this file is sumbitted to the VLM as a single prompt.
 
-<!-- # Details:
-Details can be read in my thesis that is publically available on {TOBEADDED}
+# Details:
+The `VLM_Answers/Raw_Answers` directory contains the VLM-generated textfeatures for each of the HICO images.
+
+The multi-task learing annotations can be found in the `anno/added` directory after running `Utils/annotation_preprocessing.py`. under the name `anno_augmented_....csv`.
+<!-- More details can be read in my thesis that is publically available on {TOBEADDED}
 
 # How to cite?
 If you find this repository usefull for your project please cite as {TOBEADDED} -->
